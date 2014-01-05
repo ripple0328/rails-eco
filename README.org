@@ -1,0 +1,209 @@
+#+TITLE: ruby & rails ecosystem
+
+* OS
+
+  OSX -> linux -> +windows+
+  
+* editor and ide
+
+  1. emacs
+  2. vim
+  3. textmate
+  4. sublime2
+  5. rubymine
+
+* rails options
+
+** web server
+
+   1. WEBrick
+   2. Thin
+   3. Unicore
+   4. puma
+   5. rainbown
+      
+** Database
+
+   1. SQLite
+   2. PostgreSQL
+   3. MongoDB
+   4. MySQL
+
+** Template engin
+
+   1. ERB
+   2. HAML
+   3. Slim
+
+** Unit Test
+
+   1. Test::Unit
+   2. Rspec
+   3. MiniTest
+      
+** Integeration testing
+
+   1. Rspec with Capybara
+   2. Cucumber with Capybara
+   3. Turnip with Capybara
+   4. MiniTest with Capybara
+
+** Continues testing
+
+   1. Guard
+      
+** Fixture
+
+   1. Factory Girl
+   2. Machinist
+   3. Fabrication
+      
+** Authentication
+
+   1. Devise
+   2. OminiAuth
+      
+** Authorizatation
+
+   1. CanCan with Rolify
+
+** form builder
+
+   1. SimpleForm
+   2. formtastic
+   
+** Front Style Framework
+
+   1. Bootstrap
+   2. Simple CSS
+   3. Compass
+   4. burbon
+   5. Zurb Foundation
+      
+** debug
+   
+  [[https://speakerdeck.com/jwallace/effective-debugging-rubyconf][effective debugging]]
+  
+   debug libraries
+   * 1.8 -- ruby-debug
+   * 1.9 -- debugger,ruby-debug19,debugger2
+   * 2.0 -- debugger,byebug,debuuger2
+   * pry combine use with above pry-byebug
+     
+* web service & monitor
+  
+  1. [[http://newrelic.com/][newrelic]]
+  2. [[https://scoutapp.com/][scout]]
+  3. [[https://airbrake.io/][airbake]]
+  4. [[postageapp.com][postageapp]] send mail
+
+* hosting
+
+  1. [[http://heroku.com][heroku]]
+  2. [[http://railsmachine.com/][rails machine]]
+  3. [[http://www.engineyard.com][engineyard]]
+
+* vps
+
+  1. [[https://www.linode.com/][linode]]
+  2. 阿里云
+
+* scalable hosting
+
+  1. [[http://aws.amazon.com/][amazon]]
+  2. [[http://www.rackspace.com][rackspace]]
+  3. [[http://qingcloud.com/][青云]]
+
+* consulting
+  
+  1. thoughtbot
+  2. privotal
+  3. hashrocket
+  4. intridea (all remote)
+  5. infoether
+  6. thoughtworks
+  7. workingwithrails
+  8. handlino
+
+* conf
+
+  1. Ruby Conf
+  2. Ruby Conf China
+  3. Ruby kaigi
+  4. Rails Conf
+  5. Ruby tuesday
+  6. Rails Girl
+
+* books
+* video
+
+  因为rails以及相关技术演进比较快，所以大部分资料都以在线形式存在。否则等到出版就
+  已经部分过时，最起码已经跟不上rails的版本了。
+  rails主要的教材种类有： 
+  1. 在线教材： 更新及时，内容全面
+  2. 出版教材： 方便离线阅读，内容陈旧
+  3. pdf教材： 实在不能在线，比出版教材新一点点
+  4. screencast： 主题明确，内容集中，短小精悍。可以将很多不会书面写明的细节背景
+     知识无形中传递，比较推荐。
+
+** 标记意思
+
+  1. 付费 $
+  2. 在线免费，pdf付费＃
+  3. 免费 *
+     
+** 在线书籍
+
+  1. $[[http://pragprog.com/book/rails4/agile-web-development-with-rails][《agile web development with rails 4th edition》]]前入门圣经，rails作者DHH亲著。
+     在早期rails知名度不高，资料匮乏时期，是唯一经典教材，通过一个完整的在线应用
+     商店的示例，贯穿到了rails的大部分内容，从最初的安装到高阶的复杂主题都有涉及。
+  2. [[http://pragprog.com/book/ruby3/programming-ruby-1-9][$ programming ruby 1.9]] 据说rails麽有ruby不好的，虽然我没感觉出来，但是ruby用
+     处很多，学好点没坏处。
+  3. * [[http://guides.rubyonrails.org/index.html][rails guides]] 最全面的rails教程，按主题分类，比如控制器 ，视图，模型，分别
+     介绍，内容详尽。希望全面了解rails方方面面的可通读，或者选择某个主题来详细了解。
+  4. ＃ [[http://ruby.railstutorial.org/ruby-on-rails-tutorial-book][rails tutorial]] 评价很高，被誉为入门必读。讲到了安装配置，版本控制，heroku部署，用户认证，测试驱动开
+     发，最后一个简易且的类twitter应用。
+  5. * [[http://ihower.tw/rails3/][rails3 实战圣经]] 台湾ihower写的很细腻的rails教材，不仅内容实用，
+     还有很多其他材料链接。
+  6. $ [[http://rails-101.logdown.com/][ rails101]] 繁体台湾的xdite。没看过不评价，听说挺好。
+
+** 视频教程
+
+   1. * [[http://railscasts.com/][railscasts]] 质量最高的免费screencast，
+   2. $ [[http://railscasts.com/pro][ railscasts pro]] railscasts的付费版，有一些修订过内容更新，和比较深入专业
+      一些的主题。
+   3. $[[https://peepcode.com/screencasts][ peepcode]] 质量很高，比较专业，比较贵，内容广泛，rails，javascript，ruby，unix等都有
+   4. [[http://www.codeschool.com/courses][$ code school]] 高质量，不仅包括视频教程，还有分阶段的在线测试题，很赞，可以即
+      时稳固所学，在线看到效果，对新手太有用了，否则某方面的知识测试，可能需要自
+      己为它建一个rails项目，搭建一些框架代码，才能去做实验。另外做完每个主题它会
+      链接很多其他资料，包括其他非常好的screencasts。 
+   5. [[http://ruby.railstutorial.org/#buy][$ Rails tutorail]]
+   6. [[https://teamtreehouse.com/][$ think vitamin]] 主要面向web，ios主题
+   7. [[http://pragprog.com/screencasts][* progrog]] 配套一些书类似主题的介绍。
+	 8. * [[http://www.codecademy.com/][codecademy]] web相关的视频教程 
+
+** 在线练习
+
+	 1. [[http://www.codecademy.com/courses][codecademy]] 有很多ruby,rails,python,js方面的在线课程和练习.
+  
+* blogs
+  
+ 1. [[http://www.ruby-china.org][ruby中国社区]]
+ 2. [[http://ruby-tw.org][ruby台湾社区]]
+ 3. [[http://thoughtrails.com/][中文rails分享]]
+  
+* site by rails
+
+  1. github
+  2. groupon
+  3. twitter
+  4. basecamp
+  5. scribd
+  6. hulu
+  7. slideshare
+  8. Yellow pages
+  9. 43Things
+  10. Airbnb
+
+  [[http://ruby-china.org/sites][in china]]
+     
