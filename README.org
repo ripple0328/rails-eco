@@ -13,7 +13,6 @@
   5. rubymine
 
 * rails options
-
 ** web server
 
    1. WEBrick
@@ -72,8 +71,10 @@
    1. SimpleForm
    2. formtastic
    
+** front full stack js framework
+   1. ember.js
+   2. angular
 ** Front Style Framework
-
    1. Bootstrap
    2. Simple CSS
    3. Compass
